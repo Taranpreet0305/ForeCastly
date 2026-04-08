@@ -1,6 +1,6 @@
-# SkyCast Weather
+# Forecastly Weather
 
-SkyCast is a weather dashboard built with React, TypeScript, and Vite. It shows current conditions, hourly and multi-day forecasts, air quality, UV index, weather alerts, and a map view for any searchable city, with automatic geolocation on first load.
+Forecastly is a weather dashboard built with React, TypeScript, and Vite. It shows current conditions, hourly and multi-day forecasts, air quality, UV index, weather alerts, and a map view for any searchable city, with automatic geolocation on first load.
 
 ## Features
 

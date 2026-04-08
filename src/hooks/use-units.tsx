@@ -18,20 +18,20 @@ const UnitsContext = createContext<UnitsContextType | null>(null);
 
 export function UnitsProvider({ children }: { children: ReactNode }) {
   const [tempUnit, setTempUnit] = useState<TempUnit>(
-    () => (localStorage.getItem("skycast-temp") as TempUnit) || "celsius"
+    () => (localStorage.getItem("forecastly-temp") as TempUnit) || "celsius"
   );
   const [windUnit, setWindUnit] = useState<WindUnit>(
-    () => (localStorage.getItem("skycast-wind") as WindUnit) || "ms"
+    () => (localStorage.getItem("forecastly-wind") as WindUnit) || "ms"
   );
 
   const handleTempUnit = useCallback((u: TempUnit) => {
     setTempUnit(u);
-    localStorage.setItem("skycast-temp", u);
+    localStorage.setItem("forecastly-temp", u);
   }, []);
 
   const handleWindUnit = useCallback((u: WindUnit) => {
     setWindUnit(u);
-    localStorage.setItem("skycast-wind", u);
+    localStorage.setItem("forecastly-wind", u);
   }, []);
 
   const convertTemp = useCallback(

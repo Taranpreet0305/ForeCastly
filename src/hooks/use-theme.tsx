@@ -10,7 +10,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | null>(null);
 
 function getInitialTheme(): Theme {
-  const stored = localStorage.getItem("skycast-theme") as Theme | null;
+  const stored = localStorage.getItem("forecastly-theme") as Theme | null;
   if (stored) return stored;
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
@@ -21,7 +21,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const root = document.documentElement;
     root.classList.toggle("dark", theme === "dark");
-    localStorage.setItem("skycast-theme", theme);
+    localStorage.setItem("forecastly-theme", theme);
   }, [theme]);
 
   const toggleTheme = useCallback(() => {

@@ -14,7 +14,7 @@ interface FavoritesContextType {
 
 const FavoritesContext = createContext<FavoritesContextType | null>(null);
 
-const STORAGE_KEY = "skycast-favorites";
+const STORAGE_KEY = "forecastly-favorites";
 
 function loadFavorites(): FavoriteCity[] {
   try {

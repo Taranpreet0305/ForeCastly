@@ -25,8 +25,8 @@ const Index = () => {
       <header className="pt-10 pb-6 px-4">
         <div className="max-w-lg mx-auto flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <img src="/mainlogo1.png" alt="SkyCast Logo" className="h-12 w-12 object-contain" />
-            <h1 className="text-4xl font-bold text-foreground tracking-tight">SkyCast</h1>
+            <img src="/mainlogo1.png" alt="Forecastly Logo" className="h-12 w-12 object-contain" />
+            <h1 className="text-4xl font-bold text-foreground tracking-tight">Forecastly</h1>
           </div>
           <div className="flex items-center gap-3">
             {weather && !loading && <FavoriteButton weather={weather} />}
@@ -57,8 +57,8 @@ const Index = () => {
         {showEmpty && (
           <div className="space-y-6">
             <div className="text-center pt-8 animate-fade-up">
-              <img src="/mainlogo1.png" alt="SkyCast" className="h-20 w-20 mx-auto opacity-20 grayscale mb-4" />
-              <p className="text-lg font-medium text-foreground">Welcome to SkyCast</p>
+              <img src="/mainlogo1.png" alt="Forecastly" className="h-20 w-20 mx-auto opacity-20 grayscale mb-4" />
+              <p className="text-lg font-medium text-foreground">Welcome to Forecastly</p>
               <p className="text-sm text-muted-foreground mt-1">
                 Search for a city or pick one below
               </p>
